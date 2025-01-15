@@ -1,0 +1,80 @@
+---
+title: Subtab
+---
+I'm sure DAS team would love for these tabs to be synchronized like Docusaurus's
+
+<Tabs>
+  <Tab title="Node.js & VSCode">
+    Create a new folder for your project, navigate to it in the command line, and initialize a new Node.js project:
+    
+    npm init -y
+    Next, install all the Node.js dependencies we're going to use. In this case it will be dotenv (utility for initializing environment variables from a file), Express.js (web framework), an Express.js middleware for handling multipart/form-data requests, and finally the various packages of the official APS SDK:
+
+    npm install --save dotenv express express-formidable
+    npm install --save @aps\_sdk/authentication @aps\_sdk/model-derivative @aps\_sdk/oss
+
+    The "dependencies" in your package.json file should now look something like this (potentially with slightly different version numbers):
+
+    ```sh
+    ...
+    "dependencies": \{
+      "@aps\_sdk/authentication": "^1.0.0",
+      "@aps\_sdk/model-derivative": "^1.0.0",
+      "@aps\_sdk/oss": "^1.0.1",
+      "dotenv": "^16.4.1",
+      "express": "^4.18.2",
+      "express-formidable": "^1.2.0"
+    },
+    ...
+    ```
+
+    Finally, let's create a couple more subfolders in the project folder that we're going to need later:
+
+    wwwroot - this is where we're going to put all the client side assets (HTML, CSS, JavaScript, images, etc.)
+    routes - this is where we're going to implement all the server endpoints
+    services - here we're going to keep all the server-side logic that can be shared by different endpoints
+    Now, when you open your project folder in Visual Studio Code for the first time, the folder structure should look similar to this.
+
+    ![](https://files.readme.io/04b36df1c6db6fb4efa1cf1718692e4964eff1e60093b0653e587a651d3d1a9d-image.png)
+  </Tab>
+
+  <Tab title=".Net & VSCode">
+    Create a new folder for your project, navigate to it in the command line, and initialize a new ASP.NET Core project:
+
+`dotnet new web`
+
+Next we will need to install the dependencies. In this case it will just be a couple of packages from the official APS SDK:
+```sh
+dotnet add package Autodesk.Authentication
+dotnet add package Autodesk.ModelDerivative
+dotnet add package Autodesk.OSS
+```
+The \*.csproj file in your project should now look similar to this (possibly with slightly different version numbers, and additional .NET settings):
+
+```csharp
+<Project Sdk="Microsoft.NET.Sdk.Web">
+ <PropertyGroup>
+   <TargetFramework>net8.0\</TargetFramework>
+ </PropertyGroup>
+ <ItemGroup>
+   <PackageReference Include="Autodesk.Authentication" Version="2.0.0" />
+   <PackageReference Include="Autodesk.ModelDerivative" Version="2.0.0" />
+   <PackageReference Include="Autodesk.OSS" Version="2.0.0" />
+ </ItemGroup>
+</Project>
+```
+  
+Finally, let's create a couple more subfolders in your project folder that we're going to need later:
+
+Controllers - this is where we're going to implement all the server endpoints
+Models - here we're going to keep all the server-side logic that can be shared by different endpoints
+wwwroot - this is where we're going to put all the client side assets (HTML, CSS, JavaScript, images, etc.)
+Now, when you open your project folder in Visual Studio Code for the first time, you will be prompted to setup your project for .NET development. Accept the prompt, and the editor will automatically create a .vscode subfolder with additional .NET specific settings such as the default launch configuration. The folder structure in the editor should look similar to this:
+
+note
+If the .vscode folder is not created automatically, you can create it via the Run & Debug sidepanel.
+
+To create the .vscode folder click on the Run and Debug tool on the left sidepanel > create a launch.json file > Select .NET & .NET Core.
+ </Tab>
+
+</Tabs>
