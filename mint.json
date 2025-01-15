@@ -63,18 +63,20 @@
       "pages": [
         "poc-tests/callouts",
         {
-          "group": "Gallery",
-          "icon": "table",
-          "pages": [
-            "poc-tests/gallery"
-          ]
-        },
-        {
           "group": "Tabs",
           "icon": "tablets",
           "pages": [
             "poc-tests/tabs/tab",
             "poc-tests/tabs/subtab"
+          ]
+        },
+        {
+          "group": "Gallery",
+          "icon": "table",
+          "pages": [
+            "poc-tests/gallery/gallery",
+            "poc-tests/gallery/controlling-viewer-states",
+            "poc-tests/gallery/handling-viewer-events"
           ]
         }
       ]
