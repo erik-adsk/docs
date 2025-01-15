@@ -64,16 +64,16 @@
           "group": "Gallery",
           "icon": "vial-virus",
           "pages": [
-            "essentials/gallery"
+            "poc-tests/gallery"
           ]
         },
-        "essentials/callouts.mdx",
+        "poc-tests/callouts.mdx",
         {
           "group": "Tabs",
           "icon": "tablets",
           "pages": [
-            "essentials/index",
-            "essentials/subtab"
+            "poc-tests/index",
+            "poc-tests/subtab"
           ]
         }
       ]
