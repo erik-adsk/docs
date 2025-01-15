@@ -59,21 +59,22 @@
     },
     {
       "group": "POC Tests",
+      "icon": "vial-virus",
       "pages": [
+        "poc-tests/callouts",
         {
           "group": "Gallery",
-          "icon": "vial-virus",
+          "icon": "table",
           "pages": [
-            "poc-tests/gallery"
+            "poc-tests/gallery/gallery",
           ]
         },
-        "poc-tests/callouts",
         {
           "group": "Tabs",
           "icon": "tablets",
           "pages": [
-            "poc-tests/index",
-            "poc-tests/subtab"
+            "poc-tests/tabs/tab",
+            "poc-tests/tabs/subtab"
           ]
         }
       ]
