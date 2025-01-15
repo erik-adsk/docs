@@ -58,6 +58,27 @@
       ]
     },
     {
+      "group": "POC Tests",
+      "pages": [
+        {
+          "group": "Gallery",
+          "icon": "vial-virus",
+          "pages": [
+            "essentials/gallery",
+          ]
+        },
+        "essentials/callouts.mdx",
+        {
+          "group": "Tabs",
+          "icon": "tablets",
+          "pages": [
+            "essentials/index"
+            "essentials/subtab"
+          ]
+        }
+      ]
+    },
+    {
       "group": "Essentials",
       "pages": [
         "essentials/markdown",
