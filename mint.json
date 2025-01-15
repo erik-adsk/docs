@@ -67,7 +67,7 @@
             "poc-tests/gallery"
           ]
         },
-        "poc-tests/callouts.mdx",
+        "poc-tests/callouts",
         {
           "group": "Tabs",
           "icon": "tablets",
