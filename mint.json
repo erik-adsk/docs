@@ -62,7 +62,7 @@
       "icon": "vial-virus",
       "pages": [
         "poc-tests/callouts",
-        "poc-tess/accordions",
+        "poc-tests/accordions",
         {
           "group": "Tabs",
           "icon": "tablets",
